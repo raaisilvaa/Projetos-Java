@@ -1,4 +1,4 @@
-package projetos_treino;
+package media_aritmetica;
 
 import java.util.Scanner;
 
