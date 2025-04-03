@@ -1,4 +1,4 @@
-package dias_em_anos;
+package projetos_conhecendo_a_base.dias_em_anos;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package media_aritmetica;
+package projetos_conhecendo_a_base.media_aritmetica;
 
 import java.util.Scanner;
 

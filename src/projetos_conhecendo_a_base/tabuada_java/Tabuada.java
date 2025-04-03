@@ -1,4 +1,4 @@
-package tabuada_java;
+package projetos_conhecendo_a_base.tabuada_java;
 /*
  * 1- Ler um número.
  * 2- Imprimir sua tabuada.
