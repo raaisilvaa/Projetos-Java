@@ -18,5 +18,6 @@ public class EstoqueMedio {
     int quantidadeMedia = (quantidadeMinima + quantidadeMaxima) / 2;
 
     System.out.printf("Estoque mínimo: %d\n Estoque máximo: %d\n O estoque médio é de: %d", quantidadeMinima, quantidadeMaxima, quantidadeMedia);
+    
   }
 }
