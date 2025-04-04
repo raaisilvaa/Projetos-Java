@@ -22,7 +22,7 @@ public class DiasDeIdade {
     scanner.close();
 
     // Calcular a idade em dias.
-    int calculoIdadeEmDias = numeroIdade * 365;
+    int calculoIdadeEmDias = numeroIdade * 365;+
     System.out.printf("%d", calculoIdadeEmDias);
   }
 }
