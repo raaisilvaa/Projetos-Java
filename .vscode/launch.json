@@ -1,0 +1,84 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Conversor_Dolar_Real",
+      "request": "launch",
+      "mainClass": "projetos_conhecendo_a_base.conversor_dolar_real.Conversor_Dolar_Real",
+      "projectName": "Projetos-Java_52e893eb"
+    },
+    {
+      "type": "java",
+      "name": "DiasDeIdade",
+      "request": "launch",
+      "mainClass": "projetos_conhecendo_a_base.dias_em_anos.DiasDeIdade",
+      "projectName": "Projetos-Java_52e893eb"
+    },
+    {
+      "type": "java",
+      "name": "EstoqueMedio",
+      "request": "launch",
+      "mainClass": "projetos_conhecendo_a_base.estoque_medio.EstoqueMedio",
+      "projectName": "Projetos-Java_52e893eb"
+    },
+    {
+      "type": "java",
+      "name": "MediaAritmetica",
+      "request": "launch",
+      "mainClass": "projetos_conhecendo_a_base.media_aritmetica.MediaAritmetica",
+      "projectName": "Projetos-Java_52e893eb"
+    },
+    {
+      "type": "java",
+      "name": "PrecoDesconto",
+      "request": "launch",
+      "mainClass": "projetos_conhecendo_a_base.preco_desconto.PrecoDesconto",
+      "projectName": "Projetos-Java_52e893eb"
+    },
+    {
+      "type": "java",
+      "name": "RelacionamentoOrdens",
+      "request": "launch",
+      "mainClass": "projetos_conhecendo_a_base.relacionamento_ordens.RelacionamentoOrdens",
+      "projectName": "Projetos-Java_52e893eb"
+    },
+    {
+      "type": "java",
+      "name": "SaudacaoConsole",
+      "request": "launch",
+      "mainClass": "projetos_conhecendo_a_base.saudacao_console.SaudacaoConsole",
+      "projectName": "Projetos-Java_52e893eb"
+    },
+    {
+      "type": "java",
+      "name": "Tabuada",
+      "request": "launch",
+      "mainClass": "projetos_conhecendo_a_base.tabuada_java.Tabuada",
+      "projectName": "Projetos-Java_52e893eb"
+    },
+    {
+      "type": "java",
+      "name": "Aprovado_Reprovado",
+      "request": "launch",
+      "mainClass": "tomando_decisoes_codigo_projetos.exercicio1.Aprovado_Reprovado",
+      "projectName": "Projetos-Java_52e893eb"
+    },
+    {
+      "type": "java",
+      "name": "Par_Impar",
+      "request": "launch",
+      "mainClass": "tomando_decisoes_codigo_projetos.exercicio2.Par_Impar",
+      "projectName": "Projetos-Java_52e893eb"
+    }
+  ]
+}
