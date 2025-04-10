@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CategoriaAtleta",
+      "request": "launch",
+      "mainClass": "tomando_decisoes_codigo_projetos.exercicio4.CategoriaAtleta",
+      "projectName": "Projetos-Java_d406edc6"
+    },
+    {
+      "type": "java",
+      "name": "OrdemCrescente",
+      "request": "launch",
+      "mainClass": "tomando_decisoes_codigo_projetos.exercicio3.OrdemCrescente",
+      "projectName": "Projetos-Java_d406edc6"
+    },
+    {
+      "type": "java",
       "name": "Current File",
       "request": "launch",
       "mainClass": "${file}"
