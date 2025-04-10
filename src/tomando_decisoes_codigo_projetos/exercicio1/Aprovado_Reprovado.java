@@ -1,6 +1,5 @@
 package tomando_decisoes_codigo_projetos.exercicio1;
 
-import java.io.Console;
 import java.util.Scanner;
 
 /*

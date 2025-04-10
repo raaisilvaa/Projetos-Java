@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CalculadoraSimples",
+      "request": "launch",
+      "mainClass": "tomando_decisoes_codigo_projetos.exercicio5.CalculadoraSimples",
+      "projectName": "Projetos-Java_d406edc6"
+    },
+    {
+      "type": "java",
       "name": "Aprovado_Reprovado",
       "request": "launch",
       "mainClass": "tomando_decisoes_codigo_projetos.exercicio1.Aprovado_Reprovado",
