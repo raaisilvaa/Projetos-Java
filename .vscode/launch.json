@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "AnoBissexto",
+      "request": "launch",
+      "mainClass": "exercicio8.AnoBissexto",
+      "projectName": "Projetos-Java_d406edc6"
+    },
+    {
+      "type": "java",
+      "name": "AreaFiguraGeometrica",
+      "request": "launch",
+      "mainClass": "tomando_decisoes_codigo_projetos.exercicio7.AreaFiguraGeometrica",
+      "projectName": "Projetos-Java_d406edc6"
+    },
+    {
+      "type": "java",
+      "name": "CalculadoraIMC",
+      "request": "launch",
+      "mainClass": "tomando_decisoes_codigo_projetos.exercicio6.CalculadoraIMC",
+      "projectName": "Projetos-Java_d406edc6"
+    },
+    {
+      "type": "java",
       "name": "CalculadoraSimples",
       "request": "launch",
       "mainClass": "tomando_decisoes_codigo_projetos.exercicio5.CalculadoraSimples",
