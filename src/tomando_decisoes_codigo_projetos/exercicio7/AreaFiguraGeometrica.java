@@ -39,10 +39,9 @@ public class AreaFiguraGeometrica {
       default -> "error";
   };
 
-  System.out.println("A área da figura é: " + areaTexto);
+    System.out.println("A área da figura é: " + areaTexto);
 
-  scanner.close();
-    
+    scanner.close();
     
   }
 }
