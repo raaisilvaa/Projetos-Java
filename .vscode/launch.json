@@ -6,6 +6,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ImpressaoMaiorNumero",
+      "request": "launch",
+      "mainClass": "repetindo_instrucoes.exercicio4.ImpressaoMaiorNumero",
+      "projectName": "Projetos-Java_d406edc6"
+    },
+    {
+      "type": "java",
+      "name": "PiramideDeNumeros",
+      "request": "launch",
+      "mainClass": "repetindo_instrucoes.exercicio3.PiramideDeNumeros",
+      "projectName": "Projetos-Java_d406edc6"
+    },
+    {
+      "type": "java",
+      "name": "SomaDosNumeros",
+      "request": "launch",
+      "mainClass": "repetindo_instrucoes.exercicio2.SomaDosNumeros",
+      "projectName": "Projetos-Java_d406edc6"
+    },
+    {
+      "type": "java",
+      "name": "Contando_de_1_a_10",
+      "request": "launch",
+      "mainClass": "repetindo_instrucoes.exercicio1.Contando_de_1_a_10",
+      "projectName": "Projetos-Java_d406edc6"
+    },
+    {
+      "type": "java",
       "name": "AnoBissexto",
       "request": "launch",
       "mainClass": "exercicio8.AnoBissexto",

@@ -1,4 +1,4 @@
-package exercicio8;
+package tomando_decisoes_codigo_projetos.exercicio8;
 
 import java.util.Scanner;
 
