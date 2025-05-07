@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ParesDeNomes_Carrinhos",
+      "request": "launch",
+      "mainClass": "projeto_jw_central.ParesDeNomes_Carrinhos",
+      "projectName": "Projetos-Java_d406edc6"
+    },
+    {
+      "type": "java",
+      "name": "ArrayTarefas",
+      "request": "launch",
+      "mainClass": "projetos_arrays_dados.array_tarefas.ArrayTarefas",
+      "projectName": "Projetos-Java_d406edc6"
+    },
+    {
+      "type": "java",
+      "name": "ImprimirNumeroArrays",
+      "request": "launch",
+      "mainClass": "projetos_arrays_dados.imprimir_numeros_arrays.ImprimirNumeroArrays",
+      "projectName": "Projetos-Java_d406edc6"
+    },
+    {
+      "type": "java",
       "name": "Fibonacci",
       "request": "launch",
       "mainClass": "repetindo_instrucoes.exercicio6.Fibonacci",

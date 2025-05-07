@@ -37,3 +37,25 @@ public class ImpressaoMaiorNumero {
     scanner.close();
   }
 }
+
+// Segunda maneira de se fazer o mesmo exercício
+
+/*
+ * Scanner scanner = new Scanner(System.in);
+    int maiorNumero = 0;
+
+    while (true) {
+      int numero = scanner.nextInt();
+
+      if (numero < 0) {
+          break;
+      }
+
+      if (numero > maiorNumero) {
+          maiorNumero = numero;
+      }
+    }
+
+    System.out.println(maiorNumero);
+    scanner.close();
+ */
