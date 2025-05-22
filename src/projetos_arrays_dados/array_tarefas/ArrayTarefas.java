@@ -71,7 +71,5 @@ public class ArrayTarefas {
     } while (opcao != 3); // Loop continua enquanto a opção não for 3 (Sair)
 
     scanner.close();
-
-
   }
 }

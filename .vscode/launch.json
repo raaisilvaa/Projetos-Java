@@ -6,6 +6,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "AgendaDeCompromissos3",
+      "request": "launch",
+      "mainClass": "projetos_arrays_dados.agenda_compromissos.AgendaDeCompromissos3",
+      "projectName": "Projetos-Java_d406edc6"
+    },
+    {
+      "type": "java",
+      "name": "AgendaCompromissos2",
+      "request": "launch",
+      "mainClass": "projetos_arrays_dados.agenda_compromissos.AgendaCompromissos2",
+      "projectName": "Projetos-Java_d406edc6"
+    },
+    {
+      "type": "java",
+      "name": "AgendaDeCompromissos",
+      "request": "launch",
+      "mainClass": "projetos_arrays_dados.agenda_compromissos.AgendaDeCompromissos",
+      "projectName": "Projetos-Java_d406edc6"
+    },
+    {
+      "type": "java",
+      "name": "ComparandoArraysNumeros",
+      "request": "launch",
+      "mainClass": "projetos_arrays_dados.comparando_arrays_numeros.ComparandoArraysNumeros",
+      "projectName": "Projetos-Java_d406edc6"
+    },
+    {
+      "type": "java",
       "name": "ParesDeNomes_Carrinhos",
       "request": "launch",
       "mainClass": "projeto_jw_central.ParesDeNomes_Carrinhos",
