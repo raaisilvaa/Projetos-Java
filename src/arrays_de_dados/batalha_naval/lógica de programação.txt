@@ -1,0 +1,26 @@
+INÍCIO DO JOGO
+  1. Perguntar e validar as 3 posições dos navios secretos.
+  2. Criar a matriz secreta com os navios e a matriz visível só com água.
+  3. Definir 'naviosParaAfundar' = 3
+  4. Definir 'tentativasRestantes' = 10
+
+  ENQUANTO (naviosParaAfundar > 0 E tentativasRestantes > 0):
+    1. Mostrar a matriz visível e as tentativas restantes.
+    2. Perguntar e validar a linha e coluna do tiro do jogador.
+    3. SE (o tiro acertou um navio na matriz secreta):
+       A. Mostrar mensagem de acerto.
+       B. Mudar 'N' para 'X' na matriz secreta.
+       C. Mudar '~' ou 'N' para 'X' na matriz visível.
+       D. Diminuir 'naviosParaAfundar' em 1.
+    4. SENÃO (o tiro errou):
+       A. Mostrar mensagem de erro.
+       B. Mudar '~' para 'O' na matriz visível.
+    5. Diminuir 'tentativasRestantes' em 1.
+
+FIM DO ENQUANTO
+
+SE (naviosParaAfundar == 0):
+  1. Mostrar mensagem de vitória.
+SENÃO:
+  1. Mostrar mensagem de derrota.
+FIM DO JOGO

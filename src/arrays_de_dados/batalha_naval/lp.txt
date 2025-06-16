@@ -1,0 +1,86 @@
+OS "PASSOS DA RECEITA" (Lógica Detalhada):
+1. INÍCIO DO JOGO (Preparando o Campo de Batalha)
+
+1.1. Configurar o "Ouvinte" do Teclado:
+* Criar uma instância da ferramenta Scanner para que o programa possa receber os comandos do jogador (as linhas e colunas).
+
+1.2. Criar as Matrizes do Tabuleiro:
+* Inicializar a matrizVisivel com todas as posições preenchidas com '~' (água). Pense em usar dois "laços de repetição" (for aninhados) para visitar cada célula e colocar o '~'.
+* Inicializar a matrizSecreta também com todas as posições preenchidas com '~' (água) inicialmente.
+
+1.3. Pedir e Validar as 3 Posições dos Navios Secretos (Interação com o "Admin" do Jogo):
+* Para cada um dos 3 navios (repita este bloco 3 vezes):
+* Loop de Validação para a Posição:
+* faça enquanto (do-while): Continue perguntando enquanto a posição digitada pelo usuário for inválida.
+* Solicitar Entrada: Mostrar uma mensagem como "Digite a linha do Navio X (0-4):" e "Digite a coluna do Navio X (0-4):".
+* Ler Entrada: Usar o scanner para ler os dois números (linha e coluna) que o usuário digitar.
+* Verificar Validade da Posição:
+* SE (if): A linha é menor que 0 OU a linha é maior que 4 OU a coluna é menor que 0 OU a coluna é maior que 4:
+* Mostrar mensagem de erro: "Posição inválida! Digite valores entre 0 e 4."
+* SENÃO SE (else if): A posição matrizSecreta[linha][coluna] já contém um 'N' (ou seja, já tem um navio ali):
+* Mostrar mensagem de erro: "Já existe um navio nessa posição. Escolha outra."
+* SENÃO (else): A posição é válida e não tem navio.
+* Sair do do-while de validação.
+* Colocar o Navio: Depois que uma posição válida for obtida (que não esteja fora do tabuleiro nem já ocupada por outro navio), coloque um 'N' na matrizSecreta[linha][coluna].
+
+1.4. Configurar Contadores:
+* naviosParaAfundar = 3
+* tentativasRestantes = 10
+
+1.5. Mostrar Mensagens de Boas-Vindas:
+* "Bem-vindo ao jogo de Batalha Naval!"
+* "Você tem 10 tentativas para afundar 3 navios."
+* "Vamos começar a caça!"
+2. LOOP PRINCIPAL DO JOGO (A Cada Tiro do Jogador)
+
+Este é o coração do jogo, e ele vai se repetir enquanto algumas condições forem verdadeiras.
+
+    ENQUANTO (while): naviosParaAfundar for MAIOR QUE 0 E tentativasRestantes for MAIOR QUE 0:
+
+        2.1. Mostrar o Tabuleiro Visível Atualizado:
+            Imprimir as legendas das colunas (0 1 2 3 4) na parte superior.
+            Usar dois laços (for aninhados) para percorrer a matrizVisivel.
+            Para cada linha:
+                Imprimir o número da linha na lateral.
+                Imprimir o caractere (~, 'X' ou 'O') de cada célula da matrizVisivel.
+            Imprimir uma linha em branco para separar visualmente.
+
+        2.2. Mostrar Tentativas Restantes:
+            Imprimir "Tentativas restantes: " seguido do valor de tentativasRestantes.
+
+        2.3. Pedir e Validar a Linha e Coluna do Tiro do Jogador:
+            faça enquanto (do-while): Continue perguntando enquanto a posição digitada pelo jogador for inválida ou repetida.
+            Solicitar Entrada: Mostrar "Digite a linha (0-4):" e "Digite a coluna (0-4):".
+            Ler Entrada: Usar o scanner para ler os dois números (linha e coluna).
+            Verificar Validade da Posição do Tiro:
+                SE (if): A linha é menor que 0 OU a linha é maior que 4 OU a coluna é menor que 0 OU a coluna é maior que 4:
+                    Mostrar mensagem de erro: "Posição inválida! Digite valores entre 0 e 4."
+                SENÃO SE (else if): A posição matrizVisivel[linha][coluna] já contém 'X' OU já contém 'O' (ou seja, já atirou lá antes):
+                    Mostrar mensagem de erro: "Você já atirou nessa posição. Escolha outro lugar."
+                SENÃO (else): A posição é válida e ainda não foi atacada.
+                    Sair do do-while de validação.
+
+        2.4. Processar o Tiro (Verificar Acerto/Erro):
+            SE (if): A matrizSecreta[linha][coluna] contém um 'N' (navio):
+                Mostrar mensagem: "Você acertou um navio!"
+                Ação na matrizVisivel: Mudar matrizVisivel[linha][coluna] para 'X'.
+                Ação na matrizSecreta: Mudar matrizSecreta[linha][coluna] para 'X' (para marcar que este navio já foi afundado e não ser contado novamente, ou para que o próximo tiro nele não seja um "novo" acerto).
+                Atualizar Contador de Navios: Diminuir naviosParaAfundar em 1.
+            SENÃO (else): (Significa que matrizSecreta[linha][coluna] contém '~' ou já é 'X' de um navio afundado, mas como validamos antes que não é 'X' ou 'O' na visível, será um '~').
+                Mostrar mensagem: "Você errou a água!"
+                Ação na matrizVisivel: Mudar matrizVisivel[linha][coluna] para 'O'.
+
+        2.5. Diminuir Tentativas:
+            Diminuir tentativasRestantes em 1.
+
+3. FIM DO JOGO (Anunciando o Vencedor ou Perdedor)
+
+Quando o loop principal (while) termina (porque naviosParaAfundar chegou a 0 ou tentativasRestantes chegou a 0):
+
+    SE (if): naviosParaAfundar é igual a 0:
+        Mostrar mensagem de vitória: "Parabéns! Você afundou todos os navios!"
+    SENÃO (else):
+        Mostrar mensagem de derrota: "Suas tentativas acabaram! Game Over. Os navios restantes eram..." (Você pode até mostrar o tabuleiroSecreto para revelar onde estavam os navios que não foram encontrados).
+
+3.1. Fechar o Scanner:
+* É uma boa prática "fechar" a ferramenta scanner quando você não precisa mais dela.

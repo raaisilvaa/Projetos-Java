@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "BuscarElemento",
+      "request": "launch",
+      "mainClass": "arrays_de_dados.buscar_elemento.BuscarElemento",
+      "projectName": "Projetos-Java_d406edc6"
+    },
+    {
+      "type": "java",
+      "name": "Batalha_Naval",
+      "request": "launch",
+      "mainClass": "batalha_naval.Batalha_Naval",
+      "projectName": "Projetos-Java_d406edc6"
+    },
+    {
+      "type": "java",
       "name": "AgendaDeCompromissos3",
       "request": "launch",
       "mainClass": "projetos_arrays_dados.agenda_compromissos.AgendaDeCompromissos3",
