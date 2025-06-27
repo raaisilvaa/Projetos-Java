@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "BarbeariaApp",
+      "request": "launch",
+      "mainClass": "projetos_POO.barbearia.BarbeariaApp",
+      "projectName": "Projetos-Java_d406edc6"
+    },
+    {
+      "type": "java",
+      "name": "Banco",
+      "request": "launch",
+      "mainClass": "projetos_POO.conta_bancaria_minha_solucao.Banco",
+      "projectName": "Projetos-Java_d406edc6"
+    },
+    {
+      "type": "java",
+      "name": "Banco",
+      "request": "launch",
+      "mainClass": "projetos_POO.conta_bancaria.Banco",
+      "projectName": "Projetos-Java_d406edc6"
+    },
+    {
+      "type": "java",
       "name": "BuscarElemento",
       "request": "launch",
       "mainClass": "arrays_de_dados.buscar_elemento.BuscarElemento",

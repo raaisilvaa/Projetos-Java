@@ -1,0 +1,183 @@
+Lógica de Programação - Classe Atendimento
+
+Objetivo: Criar uma classe que represente um único atendimento na barbearia, gerenciando o serviço, o preço, o valor pago pelo cliente e o cálculo do troco.
+
+1. Estrutura da Classe Atendimento
+
+    Conceito: A classe é o "molde" para criar objetos.
+
+    Sua tarefa:
+
+        Defina a classe Atendimento.
+
+        (Opcional, mas boa prática) Declare um package no topo do arquivo.
+
+2. Atributos (Características do Atendimento)
+
+    Conceito: São as variáveis que guardam as informações específicas de cada objeto Atendimento que você criar.
+
+    Sua tarefa: Dentro da classe Atendimento, declare as seguintes variáveis:
+
+        Uma variável para guardar o nome do cliente (tipo texto/String).
+
+        Uma variável para guardar o nome do serviço realizado (tipo texto/String).
+
+        Uma variável para guardar o preço do serviço (tipo número com casas decimais/double).
+
+        Uma variável para guardar o valor que o cliente realmente pagou/entregou (tipo número com casas decimais/double).
+
+        Uma variável booleana para indicar se o pagamento foi concluído com sucesso (verdadeiro/falso). Ela será false no início.
+
+3. Construtor (Atendimento(...))
+
+    Conceito: É um método especial que é chamado automaticamente quando você cria um novo objeto da classe (usando new). Ele serve para definir os valores iniciais dos atributos do objeto.
+
+    Sua tarefa:
+
+        Crie um construtor para a classe Atendimento. Ele deve ter o mesmo nome da classe.
+
+        Este construtor deve receber como parâmetros (entradas):
+
+            O nome do cliente.
+
+            O nome do serviço.
+
+            O preço do serviço.
+
+        Dentro do construtor:
+
+            Use os parâmetros recebidos para inicializar os atributos correspondentes do objeto (this.nomeCliente = nomeRecebido;).
+
+            Inicialize o atributo valorPagoCliente com 0.0 (porque o cliente ainda não pagou).
+
+            Inicialize o atributo atendimentoConcluido com false (porque o pagamento ainda não foi processado).
+
+            Imprima uma mensagem informativa na tela dizendo que um novo atendimento foi iniciado, mostrando o cliente, serviço e preço.
+
+4. Métodos "Getters" (Para Acessar Informações)
+
+    Conceito: São métodos públicos que retornam o valor de um atributo do objeto. Eles permitem que outras partes do seu programa vejam as informações do atendimento.
+
+    Sua tarefa: Crie um método "getter" para cada um dos atributos que você definiu (nome do cliente, nome do serviço, preço do serviço, valor pago cliente, atendimento concluído).
+
+        Exemplo: Um método que retorne o nome do cliente. Um método que retorne o preço do serviço. Para o boolean, use isAtendimentoConcluido().
+
+5. Método registrarPagamento(valorEntregue)
+
+    Conceito: Este método simula o momento em que o cliente entrega o dinheiro. Ele precisa verificar se o valor é suficiente.
+
+    Sua tarefa:
+
+        Crie um método chamado registrarPagamento que receba um parâmetro (entrada) do tipo double que representa o valorEntregue pelo cliente.
+
+        Dentro do método:
+
+            Imprima uma mensagem informando que o pagamento está sendo registrado.
+
+            Atribua o valorEntregue ao atributo valorPagoCliente do seu objeto Atendimento.
+
+            Lógica de Verificação (Condicional if/else):
+
+                SE o valorPagoCliente for menor que o precoServico:
+
+                    Imprima uma mensagem dizendo que o valor é insuficiente e que o cliente precisa pagar mais.
+
+                    Defina o atributo atendimentoConcluido como false.
+
+                SENÃO (se o valorPagoCliente for maior ou igual ao precoServico):
+
+                    Imprima uma mensagem dizendo que o pagamento foi recebido e o atendimento concluído.
+
+                    Defina o atributo atendimentoConcluido como true.
+
+6. Método calcularTroco()
+
+    Conceito: Este método calcula o troco que o cliente deve receber, mas somente se o pagamento tiver sido suficiente.
+
+    Sua tarefa:
+
+        Crie um método chamado calcularTroco que retorne um valor double (o troco).
+
+        Dentro do método:
+
+            Lógica de Verificação (Condicional if/else):
+
+                SE o atributo atendimentoConcluido for true (indicando que o pagamento foi suficiente):
+
+                    Calcule o troco subtraindo o precoServico do valorPagoCliente.
+
+                    Retorne esse valor do troco.
+
+                SENÃO (se atendimentoConcluido for false):
+
+                    Imprima uma mensagem dizendo que não é possível calcular o troco porque o pagamento não foi suficiente.
+
+                    Retorne 0.0 (ou qualquer valor que indique que não houve troco válido).
+
+7. Método exibirRecibo()
+
+    Conceito: Este método imprime um resumo do atendimento, atuando como um recibo simples.
+
+    Sua tarefa:
+
+        Crie um método chamado exibirRecibo que não receba parâmetros e não retorne nada (tipo void).
+
+        Dentro do método:
+
+            Lógica de Verificação (Condicional if/else):
+
+                SE o atributo atendimentoConcluido for true:
+
+                    Imprima um cabeçalho para o recibo.
+
+                    Imprima o nome do cliente.
+
+                    Imprima o nome do serviço e o seu preço.
+
+                    Imprima o valor que o cliente pagou.
+
+                    Chame o método calcularTroco() para obter o valor do troco e imprima-o. (Lembre-se de usar formatação para 2 casas decimais para valores monetários).
+
+                    Imprima um rodapé para o recibo.
+
+                SENÃO (se atendimentoConcluido for false):
+
+                    Imprima uma mensagem dizendo que o recibo não pode ser gerado porque o pagamento não foi concluído.
+
+Passo Final: Testar (na sua classe Principal / Main)
+
+    Conceito: A classe principal (BarbeariaApp.java ou Main.java) é onde o seu programa Java começa a ser executado. É aqui que você vai criar objetos da classe Atendimento e chamar seus métodos para ver se tudo funciona.
+
+    Sua tarefa:
+
+        Crie um arquivo .java separado para a sua classe principal (se ainda não tiver um).
+
+        Dentro do método public static void main(String[] args):
+
+            Cenário 1: Pagamento Suficiente:
+
+                Crie um novo objeto Atendimento, passando o nome do cliente, o serviço e o preço (ex: "Marcos Silva", "Corte de Cabelo", 45.00).
+
+                Chame o método registrarPagamento() para este objeto, passando um valor maior que o preço do serviço (ex: 50.00).
+
+                Chame o método exibirRecibo() para este objeto.
+
+            Cenário 2: Pagamento Insuficiente:
+
+                Crie outro novo objeto Atendimento, com outros dados.
+
+                Chame o método registrarPagamento() para este novo objeto, passando um valor menor que o preço do serviço.
+
+                Chame o método exibirRecibo() para ver a mensagem de erro.
+
+            Cenário 3: Pagamento Exato:
+
+                Crie um terceiro objeto Atendimento.
+
+                Chame registrarPagamento() passando o valor exato do serviço.
+
+                Chame exibirRecibo().
+
+Use System.out.println() para imprimir mensagens para cada passo e entender o fluxo. Lembre-se de usar String.format("%.2f", valor) para formatar os valores monetários.
+
+Com esta lógica passo a passo, você deve conseguir construir seu código e ver os conceitos de POO em ação! Boa sorte!
