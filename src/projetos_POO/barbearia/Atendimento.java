@@ -98,14 +98,13 @@ public class Atendimento {
       if (this.atendimentoConcluido) {
          double troco = this.valorPagoCliente - this.precoServico;
          return "----- Recibo do Atendimento -----\n"
-               + "Cliente: " + this.nomeCliente + "\n"
-               + "Serviço: " + this.servico + " - Preço: R$" + String.format("%.2f", this.precoServico) + "\n"
-               + "Valor Pago: R$" + String.format("%.2f", this.valorPagoCliente) + "\n"
-               + "Troco: R$" + String.format("%.2f", troco) + "\n"
-               + "--------------------------------";
+            + "Cliente: " + this.nomeCliente + "\n"
+            + "Serviço: " + this.servico + " - Preço: R$" + String.format("%.2f", this.precoServico) + "\n"
+            + "Valor Pago: R$" + String.format("%.2f", this.valorPagoCliente) + "\n"
+            + "Troco: R$" + String.format("%.2f", troco) + "\n"
+            + "--------------------------------";
       } else {
          return "Recibo não pode ser gerado porque o pagamento não foi concluído.";
       }
    }
 }
-/*******  faec4698-4891-480a-ae99-731a3444f4cc  *******/
