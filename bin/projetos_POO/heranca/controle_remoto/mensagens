@@ -1,0 +1,51 @@
+// Para ligar()
+"Ligando o dispositivo..."
+"O dispositivo já está ligado."
+
+// Para desligar()
+"Desligando o dispositivo..."
+"O dispositivo já está desligado."
+
+// Para abrirMenu()
+"\n----- MENU -----"
+"Está ligado? " + (this.isLigado() ? "SIM" : "NÃO") // Exemplo de uso
+"Está tocando? " + (this.isTocando() ? "SIM" : "NÃO") // Exemplo de uso
+"Volume: " + this.getVolume() + " " // seguido do loop da barra |
+"-----------------"
+"Não é possível abrir o menu: O dispositivo está desligado."
+"Não é possível abrir o menu enquanto está reproduzindo."
+
+// Para fecharMenu()
+"Fechando Menu."
+"Não há menu para fechar: O dispositivo está desligado."
+"Não é possível fechar o menu enquanto está reproduzindo."
+
+// Para maisVolume()
+"Aumentando volume para " + this.getVolume()
+"Volume já está no máximo (100)."
+"Não é possível aumentar o volume: O dispositivo está desligado."
+
+// Para menosVolume()
+"Diminuindo volume para " + this.getVolume()
+"Volume já está no mínimo (0) ou mudo."
+"Não é possível diminuir o volume: O dispositivo está desligado."
+
+// Para ligarMudo()
+"Mudo ativado!"
+"Não é possível mutar: O dispositivo está desligado."
+"O dispositivo já está no mudo."
+
+// Para desligarMudo()
+"Mudo desativado! Volume restaurado para " + this.getVolume()
+"Não é possível desmutar: O dispositivo está desligado."
+"O dispositivo não está no mudo."
+
+// Para play()
+"Iniciando reprodução..."
+"Não é possível reproduzir: O dispositivo está desligado."
+"Já está reproduzindo."
+
+// Para pause()
+"Pausando reprodução..."
+"Não é possível pausar: O dispositivo está desligado."
+"Não há nada para pausar."

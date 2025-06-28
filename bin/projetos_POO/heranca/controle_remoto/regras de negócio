@@ -1,0 +1,99 @@
+    volume: Um número inteiro que representa o nível de volume.
+
+        Regra: Deve ter um valor inicial (ex: 50).
+
+        Regra: O volume mínimo é 0.
+
+        Regra: O volume máximo é 100.
+
+    ligado: Um booleano que indica se o dispositivo está ligado ou desligado.
+
+        Regra: Deve ter um estado inicial (ex: false, desligado).
+
+    tocando: Um booleano que indica se algo está sendo reproduzido (música, vídeo, etc.).
+
+        Regra: Deve ter um estado inicial (ex: false, não tocando).
+
+Comportamentos (Métodos da Interface Controlador):
+
+    ligar()
+
+        Regra: Se o dispositivo estiver desligado, ele deve ser ligado.
+
+        Regra: Se o dispositivo já estiver ligado, não deve haver mudança de estado.
+
+        Feedback: Exibir mensagem indicando que está ligando ou que já está ligado.
+
+    desligar()
+
+        Regra: Se o dispositivo estiver ligado, ele deve ser desligado.
+
+        Regra: Ao desligar, a reprodução (se houver) deve ser interrompida (tocando = false).
+
+        Regra: Se o dispositivo já estiver desligado, não deve haver mudança de estado.
+
+        Feedback: Exibir mensagem indicando que está desligando ou que já está desligado.
+
+    abrirMenu()
+
+        Regra: O menu só pode ser aberto se o dispositivo estiver ligado e não estiver reproduzindo algo.
+
+        Regra: Ao abrir o menu, deve exibir o estado de ligado, tocando e o volume atual.
+
+        Regra: A exibição do volume deve ser visual (ex: uma barra de progresso).
+
+        Feedback: Exibir mensagem indicando que está abrindo o menu ou por que não pode abrir (desligado, tocando).
+
+    fecharMenu()
+
+        Regra: O menu só pode ser fechado se o dispositivo estiver ligado e não estiver reproduzindo algo.
+
+        Feedback: Exibir mensagem indicando que está fechando o menu ou por que não pode fechar.
+
+    maisVolume()
+
+        Regra: O volume só pode ser aumentado se o dispositivo estiver ligado.
+
+        Regra: O volume deve aumentar em incrementos (ex: +5).
+
+        Regra: O volume não pode exceder o máximo (100).
+
+        Feedback: Exibir o novo volume ou que já está no máximo/dispositivo desligado.
+
+    menosVolume()
+
+        Regra: O volume só pode ser diminuído se o dispositivo estiver ligado.
+
+        Regra: O volume deve diminuir em incrementos (ex: -5).
+
+        Regra: O volume não pode ser menor que o mínimo (0).
+
+        Feedback: Exibir o novo volume ou que já está no mínimo/dispositivo desligado.
+
+    ligarMudo()
+
+        Regra: O mudo só pode ser ativado se o dispositivo estiver ligado e o volume for maior que 0.
+
+        Regra: Ao ativar o mudo, o volume deve ser definido para 0.
+
+        Feedback: Exibir mensagem indicando mudo ativado ou por que não pode mutar.
+
+    desligarMudo()
+
+        Regra: O mudo só pode ser desativado se o dispositivo estiver ligado e o volume for exatamente 0 (indicando que está no mudo).
+
+        Regra: Ao desativar o mudo, o volume deve ser restaurado para um valor padrão (ex: 50).
+
+        Feedback: Exibir mensagem indicando mudo desativado e o volume restaurado, ou por que não pode desmutar.
+
+    play()
+
+        Regra: A reprodução só pode ser iniciada se o dispositivo estiver ligado e não estiver tocando.
+
+        Feedback: Exibir mensagem indicando início da reprodução ou por que não pode iniciar.
+
+    pause()
+
+        Regra: A reprodução só pode ser pausada se o dispositivo estiver ligado e estiver tocando.
+
+        Feedback: Exibir mensagem indicando pausa da reprodução ou por que não pode pausar.

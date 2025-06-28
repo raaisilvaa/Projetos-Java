@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Marcas",
+      "request": "launch",
+      "mainClass": "projetos_POO.heranca.controle_remoto.Marcas",
+      "projectName": "Projetos-Java_d406edc6"
+    },
+    {
+      "type": "java",
       "name": "BarbeariaApp",
       "request": "launch",
       "mainClass": "projetos_POO.barbearia.BarbeariaApp",
