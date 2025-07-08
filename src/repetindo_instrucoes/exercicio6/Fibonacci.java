@@ -3,6 +3,7 @@ package repetindo_instrucoes.exercicio6;
 import java.util.Scanner;
 
 public class Fibonacci {
+  @SuppressWarnings("resource")
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     int numero = scanner.nextInt();

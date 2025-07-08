@@ -8,22 +8,22 @@ import java.util.Scanner;
  */
 public class Aprovado_Reprovado {
   public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
+    try (Scanner scanner = new Scanner(System.in)) {
+      System.out.println("Digite a primeira nota: ");
+      double nota1 = scanner.nextDouble();
+      System.out.println("Digite a segunda nota: ");
+      double nota2 = scanner.nextDouble();
+      System.out.println("Digite a terceira nota: ");
+      double nota3 = scanner.nextDouble();
 
-    System.out.println("Digite a primeira nota: ");
-    double nota1 = scanner.nextDouble();
-    System.out.println("Digite a segunda nota: ");
-    double nota2 = scanner.nextDouble();
-    System.out.println("Digite a terceira nota: ");
-    double nota3 = scanner.nextDouble();
+      double somaNotas = (nota1 + nota2 + nota3) / 3;
+      int notaAprovado = 7;
 
-    double somaNotas = (nota1 + nota2 + nota3) / 3;
-    int notaAprovado = 7;
-
-    if (somaNotas >= notaAprovado) {
-      System.out.printf("Nota: %.1f\nAprovado!", somaNotas);
-    } else {
-      System.out.printf("Nota: %.1f\nReprovado!", somaNotas);
+      if (somaNotas >= notaAprovado) {
+        System.out.printf("Nota: %.1f\nAprovado!", somaNotas);
+      } else {
+        System.out.printf("Nota: %.1f\nReprovado!", somaNotas);
+      }
     }
 
   }

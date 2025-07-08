@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Leitura",
+      "request": "launch",
+      "mainClass": "projetos_POO.livraria.Leitura",
+      "projectName": "Projetos-Java_d406edc6"
+    },
+    {
+      "type": "java",
+      "name": "SistemaDeGerenciamento",
+      "request": "launch",
+      "mainClass": "projetos_POO.encapsulamento_atribuicao_de_classes.sistema_de_gerenciamento_de_Companhia_Aérea.SistemaDeGerenciamento",
+      "projectName": "Projetos-Java_d406edc6"
+    },
+    {
+      "type": "java",
       "name": "Marcas",
       "request": "launch",
       "mainClass": "projetos_POO.heranca.controle_remoto.Marcas",

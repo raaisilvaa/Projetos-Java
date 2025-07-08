@@ -5,7 +5,19 @@ public class Marcas {
       ControleRemoto hp = new ControleRemoto();
 
       hp.ligar();
-      hp.abrirMenu();
       hp.play();
+      hp.maisVolume();
+      hp.pause();
+
+      hp.ligarMudo();
+      hp.desligarMudo();
+      hp.maisVolume();
+      hp.maisVolume();
+      hp.maisVolume();
+      hp.menosVolume();
+      hp.pause();
+      hp.abrirMenu();
+      hp.fecharMenu();
+
    }
 }

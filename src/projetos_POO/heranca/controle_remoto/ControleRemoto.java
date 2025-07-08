@@ -145,6 +145,7 @@ public class ControleRemoto implements Controlador {
    @Override
    public void play() {
       if (this.isLigado() && !this.isTocando()) {
+         this.setTocando(true);
          System.out.println("Iniciando reprodução...");
       } else if (!this.isLigado()){
          System.out.println("Não é possível reproduzir: O dispositivo está desligado.");
@@ -156,6 +157,7 @@ public class ControleRemoto implements Controlador {
    @Override
    public void pause() {
       if (this.isLigado() && this.isTocando()) {
+         this.setTocando(false);
          System.out.println("Pausando reprodução...");
       } else if (!this.isLigado()) {
          System.out.println("Não é possível pausar: O dispositivo está desligado.");
